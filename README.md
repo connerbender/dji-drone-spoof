@@ -1,5 +1,5 @@
 # DJI Drone Spoof Attack
-A Python-based command-line tool to simulate DJI drones in the vicinity, exploiting the vulnerabilities in DJI AeroScope *as of May 2022.*
+A Python-based command-line tool to simulate DJI drones in the vicinity, exploiting the vulnerabilities in DJI AeroScope *as of May 2022*
 
 ## Background
 [DJI AeroScope](https://www.dji.com/aeroscope) systems do not verify the validity of drone remote ID packets, making them susceptible to over-the-air spoofing attacks. An attacker equipped with a network adapter in monitor mode can craft and inject spoofed drone remote ID packets, fooling the AeroScope system into detecting fake drones.
@@ -9,11 +9,11 @@ These over-the-air spoofing attacks cannot be mitigated because they exploit an 
 ## Tool Overview
 This Python script enables attackers to create spoofed DJI drone remote ID packets, including:
 
-* Model: Customize fake drone models.
-* Packet Type: Choose between different remote ID packet types.
-* Altitude & Height: Specify values to simulate drone movements.
-* GPS Coordinates: Spoof drone and ground station locations.
-* Swarm Attack: Simulate a coordinated swarm of drones.
+* **Model:** customize fake drone models
+* **Packet Type:** choose between different remote ID packet types
+* **Altitude & Height:** specify values to simulate drone movements
+* **GPS Coordinates:** spoof drone and ground station locations
+* **Swarm Attack:** simulate a coordinated swarm of drones (`--swarm`)
 
 The spoofed packets are saved in a packet capture `.pcap` file, allowing for analysis or replay attacks. 
 
