@@ -1,5 +1,5 @@
 # DJI Drone Spoof Attack
-A Python command-line tool to spoof DJI drones, tricking c-UAV systems like AeroScope (as of May 2022)
+A Python command-line tool to spoof DJI drones, tricking c-UAV detection systems like AeroScope (as of May 2022)
 
 ## Background
 [DJI AeroScope](https://www.dji.com/aeroscope) systems do not verify the validity of drone remote ID packets, making them susceptible to over-the-air spoofing attacks. An attacker equipped with a network adapter in monitor mode can craft and inject spoofed drone remote ID packets, fooling the AeroScope system into detecting fake drones.
